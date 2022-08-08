@@ -18,25 +18,21 @@ console.log({
   input,
 });
 
-console.log({h1})
-
 h1.innerHTML = 'Patito <br> Feo';
 h1.innerText = 'Patito <br> Feo';
-//console.log(h1.getAttribute('class'));
-//h1.setAttribute('class', 'rojo');
+// console.log(h1.getAttribute('class'));
+// h1.setAttribute('class', 'rojo');
 
 h1.classList.add('rojo');
 h1.classList.remove('verde');
 // h1.classList.toggle('verde');
 // h1.classList.contains('verde');
 
-input.value = 'JavaScript';
+input.value = "456"
 
 const img = document.createElement('img');
-img.setAttribute('src', 'https://pbs.twimg.com/profile_images/1534067141519069184/AyYQAI1b_400x400.jpg');
+img.setAttribute('src', 'https://static.platzi.com/static/images/conf/logo_black@2x.png');
 console.log(img);
 
-pid.append(img);
-
-//reto hacerlo con innerHtml
-// pid.innerHTML = '<img src = https://pbs.twimg.com/profile_images/1534067141519069184/AyYQAI1b_400x400.jpg >';
+pid.innerHTML = "";
+pid.appendChild(img);
